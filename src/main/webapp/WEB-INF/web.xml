@@ -19,4 +19,24 @@
   	<servlet-name>Square</servlet-name>
   	<url-pattern>/sq</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Myserv</servlet-name>
+  	<servlet-class>com.sarthakab.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Myserv</servlet-name>
+  	<url-pattern>/ms</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Sarthak</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>mobile</param-name>
+  	<param-value>Redmi</param-value>
+  </context-param>
 </web-app>
