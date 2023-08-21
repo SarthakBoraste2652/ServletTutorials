@@ -23,6 +23,10 @@
   <servlet>
   	<servlet-name>Myserv</servlet-name>
   	<servlet-class>com.sarthakab.MyServlet</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Abhishek</param-value>
+  	</init-param>
   </servlet>
   
   <servlet-mapping>

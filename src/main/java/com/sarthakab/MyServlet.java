@@ -15,12 +15,16 @@ public class MyServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		
-		ServletContext ctx = getServletContext();
-		String str = ctx.getInitParameter("name");
+//		ServletContext ctx = getServletContext();
+//		String str = ctx.getInitParameter("name");
+//		
+//		out.println("Hi "+str);
+//		
+//		String mob = ctx.getInitParameter("mobile");
+//		out.println("You are using "+mob);
 		
-		out.println("Hi "+str);
-		
-		String mob = ctx.getInitParameter("mobile");
-		out.println("You are using "+mob);
+		ServletConfig cg = getServletConfig();
+		String stName = cg.getInitParameter("name");
+		out.print("Hii "+stName);
 	}
 }
