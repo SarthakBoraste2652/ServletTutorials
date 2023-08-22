@@ -21,12 +21,16 @@ public class AddServlet extends HttpServlet {
 		int j = Integer.parseInt(req.getParameter("num2"));
 		
 		int k = i+j;
-
-
-		Cookie cookie = new Cookie("k", k+"");
-		res.addCookie(cookie);
 		
-		res.sendRedirect("sq");
+		PrintWriter out = res.getWriter();
+		out.print("<html><body bgcolor='cyan'>");
+		out.print("Output:"+k);
+		out.print("</body></html>");
+
+//		Cookie cookie = new Cookie("k", k+"");
+//		res.addCookie(cookie);
+		
+//		res.sendRedirect("sq");
 	}
 
 }
