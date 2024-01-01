@@ -2,7 +2,7 @@
     pageEncoding="UTF-8" import="java.util.ArrayList"%>
     <!-- only import attribute can be used by several times -->
 <%@page import="java.util.Random" %>
-<%@include file="header.jsp"%>
+<!--<%@include file="header.jsp"%> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +24,8 @@
 	ls.add(num1);
 	ls.add(num2);
 	int k = num1+num2;
+	
+	
 	%>
 	<br>
 	<!-- Expression tag -->
